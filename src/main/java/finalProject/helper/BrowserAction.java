@@ -15,6 +15,10 @@ public class BrowserAction {
         this.driver = Driver.getDriver();
     }
 
+    public void getUrl(String URL){
+        driver.navigate().to(URL);
+    }
+
     // Обновление страницы
     public void refreshPage() {
         driver.navigate().refresh();
