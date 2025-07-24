@@ -18,15 +18,15 @@ public class SberPlatform extends BasePage {
     @FindBy(xpath = "//div[contains(text(), 'NFT')]")
     public  WebElement nftButton;
 
-    public SberPlatform clickOnEnyButton(int i) {
-        switch (i) {
-            case 1:
+    public SberPlatform clickOnEnyButton(String ButtonsName) {
+        switch (ButtonsName) {
+            case "ЦФА":
                 webElementActions.click(cfaReleasedButton);
                 break;
-            case 2:
+            case "Вторичный рынок":
                 webElementActions.click(secondaryMarketButton);
                 break;
-            case 3:
+            case "NFT":
                 webElementActions.click(nftButton);
                 break;
             default:

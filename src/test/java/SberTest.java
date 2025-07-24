@@ -31,21 +31,21 @@ public class SberTest extends BaseTest {
     @Test
     public void checkTextInNFTPage() {
         sber.clickOnLinkForChange();
-        sberPlatform.clickOnEnyButton(3);
+        sberPlatform.clickOnEnyButton("NFT");
         Assert.assertTrue(nftPage.visibleOnMainText(),"Текст не виден");
     }
 
     @Test
     public void checkTextInCFAReleasedPage() {
         sber.clickOnLinkForChange();
-        sberPlatform.clickOnEnyButton(1);
+        sberPlatform.clickOnEnyButton("ЦФА");
         Assert.assertTrue(cfaReleasedPage.checkOnMainText(),"Текст не виден");
     }
 
     @Test
     public void checkTextInSecondaryMarkedPage() {
         sber.clickOnLinkForChange();
-        sberPlatform.clickOnEnyButton(2);
+        sberPlatform.clickOnEnyButton("Вторичный рынок");
         Assert.assertTrue(secondaryMarketPage.checkOnMainText(),"Текст не виден");
     }
 

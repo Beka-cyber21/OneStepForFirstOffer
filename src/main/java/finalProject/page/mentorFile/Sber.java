@@ -9,9 +9,9 @@ public class Sber extends BasePage {
     @FindBy(xpath = "//div[@class='MlchtUI-Cover__Children']/a[contains(text(), 'Перейти на платформу')]")
   public WebElement linkForChangePage;
 
-    public Sber clickOnLinkForChange(){
+    public void clickOnLinkForChange(){
         webElementActions.click(linkForChangePage);
-        return new Sber();
+
     }
 
 }

@@ -103,6 +103,11 @@ public class WebElementActions {
         return this;
     }
 
+    public WebElementActions clickEnterInKeyboard(){
+        actions.sendKeys(Keys.ENTER);
+        return this ;
+    }
+
     /**
      * Дальше идут boolean методы для Assert(получается они идут для проверок для тестов)
      */
